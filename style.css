@@ -1,0 +1,163 @@
+*{
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav-custom-area{
+    background-color: rgb(243, 188, 217);
+    border: 1px solid black;
+    padding: 0;
+   
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.nav-img{
+    width: 130px;
+   
+}
+.nav-item-space{
+    margin:20px;
+}
+.search-content{
+    border-radius:0 ;
+    background-color: transparent;
+    border: none;
+    transition:none;
+}
+.search-content:hover{
+     border: none;
+     background-color: transparent;
+}
+.search-btn{
+    background-color: transparent;
+    border: none;
+    
+}
+.search-icon{
+    width: 25px;
+    padding-right: 8px;
+}
+.search-bar-area{
+    background-color: transparent;
+    display: flex;
+    border-radius: 30px;
+    border: 1px solid black;
+
+}
+/* ............................................main section............................................. */
+.hero-section img{
+    width: 100%;
+ 
+}
+.hero-content{
+    position:absolute;
+    top: 26%;
+    left: 50%;   
+    transform: translate(-50%, -50%);
+    background-color: rgba(20, 21, 20, 0.421);
+    border: 1px solid black;
+    padding: 20px;
+}
+.hero-content p{
+    color: rgb(224, 221, 215);
+    text-align: center;
+}
+.hero-content h1{
+    color: rgb(224, 221, 215);
+}
+/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,hero content media queries start,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
+@media (min-width: 600px){
+    .hero-content{
+        position: absolute;
+        top: 33%;
+    }
+}
+@media (min-width: 900px){
+    .hero-content{
+        position: absolute;
+        top: 40%;
+    }
+}
+@media (min-width: 1200px){
+    .hero-content{
+        position: absolute;
+        top: 50%;
+    }
+}
+/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,hero content media queries end,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
+.heading-product{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(193, 101, 165);
+    border: 1px solid rgb(193, 101, 165);
+    padding:20px 0 ;
+}
+/* Float four columns side by side */
+.card-area{
+    width: 100%;
+}
+.column {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    margin: 26px;
+  }
+  .card h2{
+    font-size: 25px;
+    margin: 5px;
+    text-align: center;
+  }
+  .card p{
+    margin: 5px;
+    text-align: center;
+}
+   .card button{
+    border: none;
+    background-color: rgb(193, 101, 165);
+    margin: 7px 27px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 30px;
+  }
+  .card button:hover{
+    border: none;
+    background-color: rgb(194, 82, 119);
+    margin: 7px 27px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 30px;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 100%;
+      display: table;
+      clear: both;
+    }
+  }
+
